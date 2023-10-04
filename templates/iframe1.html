@@ -1,0 +1,128 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/GrSwpfrLTDzgwXe2XU2xbWHviTyYPTf0/analytics.min.js"></script><script src="https://cdn.jsdelivr.net/jquery/3.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/style.css") }}">
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.3.3/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
+  <script src="{{ url_for('static', filename="js/main1.js") }}"></script>
+  <script src="https://www.googletagservices.com/activeview/js/current/osd.js">
+  </script><script src="https://rules.quantcount.com/rules-p-31iz6hfFutd16.js" async=""></script>
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+  </script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script>
+  <script async="" type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  
+  <script>var __sellerid="c4db5661d7b7baf11b066b0d7d183734";</script>
+  <link href="//ad.doubleclick.net" rel="dns-prefetch">
+  <link href="//pagead2.googlesyndication.com" rel="dns-prefetch">
+  <link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+  <link href="//tpc.googlesyndication.com" rel="dns-prefetch">
+  <link href="//adservice.google.com" rel="dns-prefetch">
+  <link href="//secureads.g.doubleclick.net" rel="dns-prefetch">
+  <link href="//www.googletagservices.com" rel="dns-prefetch">
+  
+  <script async="" src="//c.amazon-adsystem.com/aax2/apstag.js"></script>
+  <style id="inline-css" type="text/css">
+  body{ color: ; }
+  h1, h2, h3, h4, h5, h6, .header { color: ; }
+  a{ transition: color .2s; color:  };
+  a:hover, a:focus, a:active { color: ; }
+  .frow h4{margin:0;}
+  </style>
+  <link rel="image_src" href="https://www.textfixer.com/text-fixer-website.png">
+  <link rel="alternate" href="https://www.textfixer.com/tools/paragraph-to-lines.php" hreflang="en">
+  <link rel="alternate" href="https://www.textfixer.de/tools/absatz-zu-zeile-converter.php" hreflang="de">
+  <link rel="alternate" href="https://www.textfixerfr.com/outils/convertisseur-paragraphes-en-lignes-unique.php" hreflang="fr">
+  <link rel="alternate" href="https://www.textfixeres.com/texto/convertidor-línea-de-parrafo.php" hreflang="es">
+  <meta property="og:title" content="Paragraph to Line Converter">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.textfixer.com/tools/paragraph-to-lines.php">
+  <meta property="og:image" content="https://www.textfixer.com/text-fixer-website.png">
+  <meta property="og:description" content="This paragraph converter tool will convert your multi-line paragraph text into one single line of text with no line breaks.">
+  <meta property="og:site_name" content="TextFixer">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1074040-1" type="text/javascript"></script>
+</head>
+<body>
+  <div id="content"></div>
+
+
+  <!--script id="api_key-hdbs" type="text/x-handlebars-template">
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default panel-wizard">
+            <div class="panel-body">
+              <div class="row wizard-title">
+                <div class="col-xs-12">
+                  <h4 class="wizard-step-name pull-left">API Key</h4>
+                  <h5 class="wizard-step pull-right">
+                    Step 1 of 4
+                  </h5>
+                </div>
+              </div>
+              <div class="progress wizard-progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="min-width: 3em; width: 20%;" aria-valuenow="20">
+                </div>
+              </div>
+              <div>
+                <p>Please provide your Bytesview API Key</p>
+                <div class="form-group token">
+                  <input id="api_key" type="text"  class="form-control" placeholder="Insert Key Here">
+                </div>
+                <p><strong>New to Bytesview?</strong></p>
+                <p>Sign up<a href="https://www.bytesview.com/schedule-a-demo" target="_blank"> here. </a></p>
+                <div class="row margin-top-30">
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-4">
+                    <button id="check-api_key" type="button" class="btn btn-primary pull-right">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script-->
+
+
+  <script id="api_key-hdbs" type="text/x-handlebars-template">
+    <div id="hdrWrapper"><div id="hdr" class="pw"><a href="/"><img src="{{ url_for('static', filename="images/text-fixer-online-tools.png") }}" alt="Text Fixer Online Tools"></a><div id="nav"><ul id="menu"><li><a href="/html" class="mitems">HTML Tools</a></li> <li><a href="/tools" class="mitems" id="current">Text Tools</a></li> <li><a href="/numbers" class="mitems">Number Tools</a></li> <li><a href="/tutorials" class="mitems">Tutorials</a></li></ul></div>
+    </div></div><div id="content" class="pw">
+    <h1>Paragraph to Single Line Converter</h1>
+    <!-- Ezoic - under page title LEFT - under_page_title -->
+    <span id="ezoic-pub-ad-placeholder-102"></span>
+    <!-- End Ezoic - under page title LEFT - under_page_title --><p>With this paragraph converter tool, you can convert any multi-line text content (text or code) into a single line with no line breaks at all.</p>
+    <p>This single line converter tool strips all the line breaks from your lines of text content, instantly transforming the big chunk of text or lines of code into a single continuous line that you can easily copy and paste.</p>
+    <p>It also checks to see if it needs to add a white space at the end of lines to prevent words from jamming together before the paragraphs have been transformed into a single line of text.<span id="ezoic-pub-ad-placeholder-112" class="ezoic-adpicker-ad"></span><span class="ezoic-ad box-3 box-3112 adtester-container adtester-container-112" data-ez-name="textfixer_com-box-3"><span id="div-gpt-ad-textfixer_com-box-3-0" ezaw="468" ezah="60" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:60px;min-width:468px;" class="ezoic-ad ezfound" data-google-query-id="CLLepaj38PACFT2ySwUd1oYJXQ"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof __ez_fad_position != 'undefined'){__ez_fad_position('div-gpt-ad-textfixer_com-box-3-0')};</script>
+      </span></span></p>
+
+    <!-- End Ezoic - Above Main Tool - long_content -->
+    <form method="post" action="paragraph-to-line.php" class="online-tools">
+    <h2>Paragraph to Line Tool</h2>
+    <p>Paste your text in the box below and then click the <strong>Convert to Single Line</strong> button.</p>
+    <p><textarea id="oldText" name="oldText" rows="12" cols="36"></textarea></p>
+    <p><input type="button" name="convert-single-line" id="multipleSingle" value="Convert to Single Line" class="subbtn">
+    <input type="button" name="clearText" id="clearText" value="Reset" class="rstbtn">
+    <input type="button" name="copyClip" id="copyClip" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#oldText">
+    </p>
+    </form>
+    
+
+    </div>
+  </script>
+
+
+</body>
+</html>
+
+
+
+
+

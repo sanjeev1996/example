@@ -1,0 +1,38 @@
+<div class="sidebar branding-below">
+    <form>
+    <div class="block form-group">
+        <input type="text" id="search" placeholder="API KEY.. " />
+        <button class="blue" id="verify-api-button">Submit</button>
+        <p id=verify-api-msg></p>
+    </div>
+    <div class="block">
+          <b class="width-100">Get texts from</b>
+          <div class="radio-spacer width-100"></div>
+          <input type="radio" name="origin" id="radio-use-active-range" checked="checked">
+          <label for="radio-use-active-range" >Active range </label>
+          <div class="nobr">
+              <input type="radio" name="origin" id="radio-origin-cell" value="use-written-range">
+              <label for="radio-origin-cell">Column or range:</label>
+              <input type="text" id="ml-origin" placeholder="A1:...">
+          </div>
+     <div class="block">
+                <b class="width-100">Output results to</b>
+                <div class="radio-spacer width-100"></div>
+
+                <input type="radio" name="dest" id="radio-dest-right" checked="checked">
+                <label for="radio-dest-right">Existing column(s) to the right</label>
+                <div class="radio-spacer width-100"></div>
+                <input type="radio" name="dest" id="radio-dest-insert" >
+                <label for="radio-dest-insert">Insert new column(s) to the right</label>
+                <div class="radio-spacer width-100"></div>
+                <div class="nobr">
+                    <input type="radio" name="dest" id="radio-dest-cell">
+                    <label for="radio-dest-cell">Other cell:</label>
+                    <input type="text" id="destination-cell" placeholder="B" class="width-40">
+                </div>
+              </div>
+        <button class="blue" id="run">Run</button>
+        <p id=run-api-msg><strong></strong></p>
+        </div>
+    </form>
+</div>
