@@ -6,18 +6,16 @@
   <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename="css/style2.css") }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/style.css") }}">
   <script src="https://cdn.jsdelivr.net/npm/handlebars@4.3.3/dist/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
-  
-  
+  <script src="{{ url_for('static', filename="js/main1.js") }}"></script>
   <script src="https://www.googletagservices.com/activeview/js/current/osd.js">
   </script><script src="https://rules.quantcount.com/rules-p-31iz6hfFutd16.js" async=""></script>
   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
   </script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script>
   <script async="" type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-  
   
   <script>var __sellerid="c4db5661d7b7baf11b066b0d7d183734";</script>
   <link href="//ad.doubleclick.net" rel="dns-prefetch">
@@ -95,50 +93,40 @@
 
 
   <script id="api_key-hdbs" type="text/x-handlebars-template">
-    <body class="adthrive-device-desktop">
-      <div id="hdrWrapper"><div id="hdr" class="pw"><a href="/"><img src="{{ url_for('static', filename="images/text-fixer-online-tools.png") }}" alt="Text Fixer Online Tools"></a><div id="nav"><ul id="menu"><li><a href="/tools" class="mitems" id="current">Text Tools</a></li> <li><a href="/html" class="mitems">HTML Tools</a></li> <li><a href="/numbers" class="mitems">Number Tools</a></li></ul></div>
-      </div></div>
-      <div class="adthrive-placeholder-header" style="min-height:90px;"><div id="AdThrive_Header_1_desktop" class="adthrive-ad adthrive-header adthrive-header-1 adthrive-ad-cls" style="min-height: 90px;" data-google-query-id="CN799JTbvfwCFQFNjwodvPULiw"><div id="google_ads_iframe_/18190176,21882740192/AdThrive_Header_1/6390e046ab31d14cf3490f7e_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/18190176,21882740192/AdThrive_Header_1/6390e046ab31d14cf3490f7e_0" name="google_ads_iframe_/18190176,21882740192/AdThrive_Header_1/6390e046ab31d14cf3490f7e_0" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="2"></iframe></div></div></div><div id="content" class="pw">
-      <h1>Convert Word Doc to Text File</h1>
-      <p>Use this free online tool to convert Microsoft Word documents to plain text files. It extracts all text content from a word doc into a downloadable text file.</p>
-      <p>This tool produces very clean content from simple word docs by preserving paragraph line breaks for legibility. More complicated documents with tables, etc will not be as readable in plain text as there is no table structure in the .txt file format.</p>
-      <form method="post" action="remove-line-breaks.php" class="online-tools">
-      <h2>Word Doc to Text Tool</h2>
-      <p>Follow these three easy steps to convert your Word doc to a plain txt file.</p>
-      
-      <div class="leftField">
-      <div id="word-container"></div>
-      <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="optionsMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Options</button>
-      <ul id="optionsMenu" class="dropdown-menu" aria-labelledby="optionsMenuButton"></ul>
-      </div>
-      </div>
-      
-      <h3>Step 1: Select a Word document (docx files only).</h3>
-      <p><input id="files" type="file" class="leftField" accept=".docx">
-      <button type="button" id="btnOpen" class="actbtn">Load your Word Doc</button><span id="successMsg1">Success!</span></p>
-      <p id="demo"></p>
-      
-      <h3>Step 2: Start the text conversion process.</h3>
-      <p><input type="button" id="loadButton" value="Start File Conversion" class="actbtn"><span id="successMsg2">Success!</span></p>
-          
-      <h3>Step 3: Download text file or copy text to the clipboard.</h3>
-      <p><a href="" id="downloadFile" class="actbtn lnkbtn" download="wordText.txt">Download Text File</a> or&nbsp; <input type="button" name="copyClip" id="copyClip" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#newText"></p>
-      <p><textarea id="newText" name="newText" rows="12" cols="36">Your text preview will appear here.</textarea></p><p></p>
-      </form>
-      <h3>About the Word to Text Converter</h3>
-      
-      </div>
-      
-      
-      </div>
+    <div id="hdrWrapper"><div id="hdr" class="pw"><a href="/"><img src="{{ url_for('static', filename="images/text-fixer-online-tools.png") }}" alt="Text Fixer Online Tools"></a><div id="nav"><ul id="menu"><li><a href="/html" class="mitems">HTML Tools</a></li> <li><a href="/tools" class="mitems" id="current">Text Tools</a></li> <li><a href="/numbers" class="mitems">Number Tools</a></li> <li><a href="/tutorials" class="mitems">Tutorials</a></li></ul></div>
+    </div></div><div id="content" class="pw">
+    <h1>Paragraph to Single Line Converter</h1>
+    <!-- Ezoic - under page title LEFT - under_page_title -->
+    <span id="ezoic-pub-ad-placeholder-102"></span>
+    <!-- End Ezoic - under page title LEFT - under_page_title --><p>With this paragraph converter tool, you can convert any multi-line text content (text or code) into a single line with no line breaks at all.</p>
+    <p>This single line converter tool strips all the line breaks from your lines of text content, instantly transforming the big chunk of text or lines of code into a single continuous line that you can easily copy and paste.</p>
+    <p>It also checks to see if it needs to add a white space at the end of lines to prevent words from jamming together before the paragraphs have been transformed into a single line of text.<span id="ezoic-pub-ad-placeholder-112" class="ezoic-adpicker-ad"></span><span class="ezoic-ad box-3 box-3112 adtester-container adtester-container-112" data-ez-name="textfixer_com-box-3"><span id="div-gpt-ad-textfixer_com-box-3-0" ezaw="468" ezah="60" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:60px;min-width:468px;" class="ezoic-ad ezfound" data-google-query-id="CLLepaj38PACFT2ySwUd1oYJXQ"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof __ez_fad_position != 'undefined'){__ez_fad_position('div-gpt-ad-textfixer_com-box-3-0')};</script>
+      </span></span></p>
 
+    <!-- End Ezoic - Above Main Tool - long_content -->
+    <form method="post" action="paragraph-to-line.php" class="online-tools">
+    <h2>Paragraph to Line Tool</h2>
+    <p>Paste your text in the box below and then click the <strong>Convert to Single Line</strong> button.</p>
+    <p><textarea id="oldText" name="oldText" rows="12" cols="36"></textarea></p>
+    <p><input type="button" name="convert-single-line" id="multipleSingle" value="Convert to Single Line" class="subbtn">
+    <input type="button" name="clearText" id="clearText" value="Reset" class="rstbtn">
+    <input type="button" name="copyClip1" id="copyClip1" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#oldText"></p>
+    <h2>New Text without Line Breaks</h2>
+    <p class="flat"><label for="newText">Copy your new text without line breaks from the box below.</label></p>
+    <p><textarea id="newText" name="newText" rows="12" cols="36"></textarea>
+    </p><p>
+    <input type="button" name="copyClip2" id="copyClip2" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#newText">
+    </p> 
+    <p></p>
+  </form>
+    
+
+    </div>
   </script>
 
 
 </body>
 </html>
-
 
 
 

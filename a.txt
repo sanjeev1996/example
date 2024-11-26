@@ -1,0 +1,5 @@
+This tool allows you to convert multi-line text or code into a single continuous line, eliminating all line breaks. 
+
+Whether you're dealing with paragraphs of text or blocks of code, this converter removes line breaks, giving you a streamlined, easy-to-copy version. 
+
+It ensures that spaces are properly inserted between words to prevent them from running together as the text is condensed.

@@ -6,93 +6,74 @@ $(function() {
     var html = template();
     $("#content").html(html);
 
-    $("#btnOpen").click(function (event) {
+    $("#multipleSingle").click(function (event) {
       event.preventDefault();
       console.log("this");
 
-      // document.getElementById("btnOpen").onclick=function(){"FileReader"in window?document.getElementById("files").click():alert("Your device does not support the HTML5 FileReader.")};
-      // document.getElementById("files").onchange=function(){document.getElementById("successMsg1").style.display = "inline-block"};
-
-      // var tagFest = document.getElementById("word-container").innerHTML;
-
-      // function adjuster(){
-      //   var tagFest = document.getElementById("word-container").innerHTML;
-      //   tagFest = tagFest.replaceAll('<p class="docx_listparagraph','•<p class="docx_listparagraph');
-      //   document.getElementById("word-container").innerHTML = tagFest;
-      //   var tagFest = document.getElementById("word-container").innerText;
-      //   //get rid of the big blank sections
-      //   tagFest = tagFest.replace(/(\r\n|\n|\r)/gm,"\n");
-      //   tagFest = tagFest.replaceAll('•\n\n','• ');
-      //   tagFest = tagFest.replaceAll('\n ','\n');
-      //   tagFest = tagFest.replaceAll('\n	','\n');
-      //   tagFest = tagFest.replaceAll('\n\n\n\n\n\n\n','\n\n');
-      //   tagFest = tagFest.replaceAll('\n\n\n\n\n\n','\n\n');
-      //   tagFest = tagFest.replaceAll('\n\n\n\n\n','\n\n');
-      //   tagFest = tagFest.replaceAll('\n\n\n\n','\n\n');
-      //   tagFest = tagFest.replaceAll('\n\n\n','\n\n');
-      //   document.getElementById("newText").value = tagFest.trim(); 
-      //   document.getElementById("successMsg2").style.display = "inline-block";
-      // }
-
-
-
-
-
-      var x = document.getElementById("files");
-      var txt = "";
-      if ('files' in x) {
-        if (x.files.length == 0) {
-          txt = "Select one or more files.";
-        } else {
-          for (var i = 0; i < x.files.length; i++) {
-            txt += "<br><strong>" + (i+1) + ". file</strong><br>";
-            var file = x.files[i];
-            if ('name' in file) {
-              txt += "name: " + file.name + "<br>";
-            }
-            if ('size' in file) {
-              txt += "size: " + file.size + " bytes <br>";
-            }
-          }
-        }
-      } 
-      else {
-        if (x.value == "") {
-          txt += "Select one or more files.";
-        } else {
-          txt += "The files property is not supported by your browser!";
-          txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
-        }
-      }
-      document.getElementById("demo").innerHTML = txt;
-
-
-
-
-      // const input = document.querySelector('input');
-
       // const Url='https://paragraphlines.herokuapp.com/api';
-      //   var text = document.getElementById("oldText").value
-      //   var dict={}
-      //   dict["text"] = document.getElementById("oldText").value;
-      //   console.log(dict);
-      //   $.ajax({
-      //       url: Url,
-      //       type:"POST",
-      //       data: JSON.stringify(dict),
-      //       contentType: "application/json; charset=utf-8",
-      //       success: function(result){
-      //         console.log("this1");
-      //         document.getElementById("oldText").value = result;
-      //         console.log(result);
+      const Url='http://127.0.0.1:5000/api';
+      
+        var text = document.getElementById("oldText").value
+        var dict={}
+        dict["text"] = document.getElementById("oldText").value;
+        console.log(dict);
+        $.ajax({
+            url: Url,
+            type:"POST",
+            data: JSON.stringify(dict),
+            contentType: "application/json; charset=utf-8",
+            success: function(result){
+              console.log(result);
+              document.getElementById("newText").value = result;
+              console.log(result);
               
-      //       },
-      //       error: function(error){
-      //       console.log("Error");
-      //       }
-      //     })
+            },
+            error: function(error){
+            console.log("Error");
+            }
+          })
 
-      })
+      });
+
+      $("#clearText").click(function (event) {
+        event.preventDefault();
+        console.log("this111");
+        
+          document.getElementById("oldText").value = "";  
+          document.getElementById("newText").value = "";  
+        })
+
+      $("#copyClip1").click(function (event) {
+          event.preventDefault();
+          console.log("this111");
+          
+                    // Get the text field
+          var copyText = document.getElementById("oldText");
+
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);  
+          })
+
+          $("#copyClip2").click(function (event) {
+            event.preventDefault();
+            console.log("this111");
+            
+                      // Get the text field
+            var copyText = document.getElementById("newText");
+  
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);  
+            })
+
+
       })  
 
 

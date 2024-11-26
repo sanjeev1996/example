@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@4.3.3/dist/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
-  <script src="{{ url_for('static', filename="js/remove_line_breaks.js") }}"></script>
+  <script src="{{ url_for('static', filename="js/main1.js") }}"></script>
   <script src="https://www.googletagservices.com/activeview/js/current/osd.js">
   </script><script src="https://rules.quantcount.com/rules-p-31iz6hfFutd16.js" async=""></script>
   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
@@ -51,18 +51,59 @@
 <body>
   <div id="content"></div>
 
+
+  <!--script id="api_key-hdbs" type="text/x-handlebars-template">
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default panel-wizard">
+            <div class="panel-body">
+              <div class="row wizard-title">
+                <div class="col-xs-12">
+                  <h4 class="wizard-step-name pull-left">API Key</h4>
+                  <h5 class="wizard-step pull-right">
+                    Step 1 of 4
+                  </h5>
+                </div>
+              </div>
+              <div class="progress wizard-progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="min-width: 3em; width: 20%;" aria-valuenow="20">
+                </div>
+              </div>
+              <div>
+                <p>Please provide your Bytesview API Key</p>
+                <div class="form-group token">
+                  <input id="api_key" type="text"  class="form-control" placeholder="Insert Key Here">
+                </div>
+                <p><strong>New to Bytesview?</strong></p>
+                <p>Sign up<a href="https://www.bytesview.com/schedule-a-demo" target="_blank"> here. </a></p>
+                <div class="row margin-top-30">
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-4">
+                    <button id="check-api_key" type="button" class="btn btn-primary pull-right">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script-->
+
+
   <script id="api_key-hdbs" type="text/x-handlebars-template">
     <div id="hdrWrapper"><div id="hdr" class="pw"><a href="/"><img src="{{ url_for('static', filename="images/text-fixer-online-tools.png") }}" alt="Text Fixer Online Tools"></a><div id="nav"><ul id="menu"><li><a href="/html" class="mitems">HTML Tools</a></li> <li><a href="/tools" class="mitems" id="current">Text Tools</a></li> <li><a href="/numbers" class="mitems">Number Tools</a></li> <li><a href="/tutorials" class="mitems">Tutorials</a></li></ul></div>
     </div></div><div id="content" class="pw">
     <h1>Paragraph to Single Line Converter</h1>
     <!-- Ezoic - under page title LEFT - under_page_title -->
     <span id="ezoic-pub-ad-placeholder-102"></span>
-    <!-- End Ezoic - under page title LEFT - under_page_title --><p>This tool allows you to convert multi-line text or code into a single continuous line, eliminating all line breaks.</p>
-    <p>Whether you're dealing with paragraphs of text or blocks of code, this converter removes line breaks, giving you a streamlined, easy-to-copy version.</p>
-    <p>It ensures that spaces are properly inserted between words to prevent them from running together as the text is condensed.<span id="ezoic-pub-ad-placeholder-112" class="ezoic-adpicker-ad"></span><span class="ezoic-ad box-3 box-3112 adtester-container adtester-container-112" data-ez-name="textfixer_com-box-3"><span id="div-gpt-ad-textfixer_com-box-3-0" ezaw="468" ezah="60" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:60px;min-width:468px;" class="ezoic-ad ezfound" data-google-query-id="CLLepaj38PACFT2ySwUd1oYJXQ"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof __ez_fad_position != 'undefined'){__ez_fad_position('div-gpt-ad-textfixer_com-box-3-0')};</script>
+    <!-- End Ezoic - under page title LEFT - under_page_title --><p>With this paragraph converter tool, you can convert any multi-line text content (text or code) into a single line with no line breaks at all.</p>
+    <p>This single line converter tool strips all the line breaks from your lines of text content, instantly transforming the big chunk of text or lines of code into a single continuous line that you can easily copy and paste.</p>
+    <p>It also checks to see if it needs to add a white space at the end of lines to prevent words from jamming together before the paragraphs have been transformed into a single line of text.<span id="ezoic-pub-ad-placeholder-112" class="ezoic-adpicker-ad"></span><span class="ezoic-ad box-3 box-3112 adtester-container adtester-container-112" data-ez-name="textfixer_com-box-3"><span id="div-gpt-ad-textfixer_com-box-3-0" ezaw="468" ezah="60" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:60px;min-width:468px;" class="ezoic-ad ezfound" data-google-query-id="CLLepaj38PACFT2ySwUd1oYJXQ"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof __ez_fad_position != 'undefined'){__ez_fad_position('div-gpt-ad-textfixer_com-box-3-0')};</script>
       </span></span></p>
 
-    <!-- End Ezoic - Above Main Tool - long_content 
+    <!-- End Ezoic - Above Main Tool - long_content -->
     <form method="post" action="paragraph-to-line.php" class="online-tools">
     <h2>Paragraph to Line Tool</h2>
     <p>Paste your text in the box below and then click the <strong>Convert to Single Line</strong> button.</p>
@@ -71,25 +112,7 @@
     <input type="button" name="clearText" id="clearText" value="Reset" class="rstbtn">
     <input type="button" name="copyClip" id="copyClip" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#oldText">
     </p>
-    </form> -->
-
-    <form method="post" action="remove-line-breaks.php" class="online-tools">
-      <h2>Remove Line Breaks</h2>
-      <p>Choose one of these line break options.</p>
-      <p class="flat"><input type="radio" id="paragraphs" name="paragraphs" value="yes" checked="checked"> <label for="paragraphs">Remove some line breaks (preserve paragraphs)</label></p>
-      <p class="flat"><input type="radio" id="noparagraphs" name="paragraphs" value="no"> <label for="noparagraphs">Remove ALL line breaks</label></p>
-      <p><label for="oldText">Paste your text in the box below and then click the button. <br>
-      The new text will appear in the box at the bottom of the page.</label></p>
-      <p><textarea id="oldText" name="oldText" rows="12" cols="36"></textarea></p>
-      <p><input type="button" name="Remove-Line-Breaks" value="Remove Line Breaks" onclick="javascript:removeBreaks()" class="subbtn">
-      <input type="button" name="clearText" id="clearText" value="Reset" class="rstbtn"></p>
-      <h2>New Text without Line Breaks</h2>
-      <p class="flat"><label for="newText">Copy your new text without line breaks from the box below.</label></p>
-      <p><textarea id="newText" name="newText" rows="12" cols="36"></textarea>
-      </p><p>
-      <input type="button" name="copyClip" id="copyClip" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#newText">
-      </p> 
-      <p></p></form>
+    </form>
     
 
     </div>
@@ -98,7 +121,6 @@
 
 </body>
 </html>
-
 
 
 

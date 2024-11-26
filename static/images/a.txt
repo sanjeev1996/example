@@ -1,18 +1,0 @@
-const Url='https://jsonplaceholder.typicode.com/posts';
-Ten i abt er ast Oke
-
-const data={ name:"Said",id:23};
-$.ajax({
-url: Url,
-type:"GET",//or POST
-// data:data, // if the type is POST
-// datatype: JSON or HTML ,XML,TXT,jsonp
-success: function(result){
-fore meee eee)
-},
-error: function(error){
-console.log(*Error ${error}*)
-}
-})
-})
-

@@ -22,8 +22,6 @@ $(function() {
   
   });
   
-
-
   
   function showAPIkeypage(client, server_url) {
     var source = $("#api_key-hdbs").html();
